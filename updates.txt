@@ -1,3 +1,40 @@
+update v0.106
+- multi-line comments
+
+update v0.105
+- bugfix wrong error with operator+non decimal negative value
+- do not allow CALL (IX) or CALL (IY) syntax
+- added comments begining with //
+- added SIZEOF support for fields of structures
+- new directive TICKER to count instruction duration
+
+update v0.104
+- BANK again in the same slot keep memory tracking
+- no more path simplification (until i solve it!)
+
+update v0.103
+- bugfix memory cleanup with embedded rasm
+
+update v0.102
+- bugfix 'BREAKPOINT <adress>' export
+- bugfix default limit of 65535
+- bugfix limit autotest
+- bugfix path simplification for dependencies export
+- bugfix memory leak when using (VOID) with macro
+- new math function to get a random value
+
+update v0.101
+- warn if no byte is written to a snapshot
+- warn if RUN directive was already used
+- bugfix calculation error cases
+- bugfix maxam AND/OR/XOR/MOD operator (regression of v0.89)
+- UNDEF does not care anymore about variable existence
+- better error management with macro and wrong number of parameters
+
+update v0.100
+- bugfix crash with zeroed output file
+- bugfix moar memory leaks
+
 update v0.99
 - new directive UNDEF
 - bugfix memory leaks
